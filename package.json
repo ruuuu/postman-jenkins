@@ -6,7 +6,7 @@
     "test": "tests"
   },
   "scripts": {
-    "api-tests-production": "newman run tests/testCollection.postman_collection.json  --environment tests/testMyEnvironment.postman_environment.json --reporters=cli,htmlextra" 
+    "api-tests-production": "newman run tests/testCollection.postman_collection.json  --environment tests/testMyEnvironment.postman_environment.json --reporters=cli,junit,html,htmlextra --reporter-junit-export 'newman/report.xml'" 
   },
   "author": "Rufina Davletova",
   "dependencies": {
